@@ -1,0 +1,382 @@
+/* STEPPER */
+.wrapper-progressBar {
+    width: 100%
+}
+.re-container{
+    position: relative;
+    top: -15px;
+    padding-left: 15px;
+}
+/* Header */
+.re-sticky-head{
+    left: 0;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+}
+.re-sticky-head.sticky{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    transition: background-color .2s linear;
+    box-shadow: 0 5px 15px 0 rgb(0 0 0 / 10%);
+    z-index: 1;
+    padding-bottom: 10px;
+}
+.main-editBtn{
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #2183E5;
+    ;
+}
+.main-editBtn:after{
+    content: '';
+    background: url('../../assets/Vector.svg') no-repeat;
+    width: 22px;
+    height: 19px;
+    display: inline-block;
+    position: relative;
+    left: 10px;
+    top: 4px;
+
+}
+.main-edit-btn{
+    border-radius: 4px;
+    padding: 8px 19px;
+    border: none;
+}
+.main-edit-btn:not(:last-child){
+    margin-right: 16px;
+}
+.main-edit-btn.grey{
+    background-color: #E9ECEF;
+    color: #B4C1CD;
+}
+.main-edit-btn.blue{
+    background-color: #2183E5;
+    color: #fff;
+}
+.head-right-bottom{
+    display: flex;
+    justify-content: flex-end;
+    padding: 24px 0;
+}
+/* STEPPER */
+
+.progressBar {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+}
+
+.progressBar li {
+    list-style-type: none;
+    position: relative;
+    text-align: center;
+    flex-basis: 20%;
+    font-size: 12px;
+    color: #6C757D;
+}
+
+.progressBar li:before {
+    content: " ";
+    line-height: 30px;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ddd;
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    background-color: white
+}
+
+.progressBar li:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+    top: 8px;
+    left: -50%;
+    z-index: -1;
+}
+
+.progressBar li:first-child:after {
+    content: none;
+}
+
+.progressBar li.active {
+    color: #00BB28;
+}
+
+.progressBar li.active:before {
+    border-color: #00BB28;
+    background-color: #00BB28
+}
+
+.progressBar li.active:after {
+    background-color: #00BB28;
+}
+
+.progressBar li.active + li::after{
+    background-color: #00BB28;
+}
+
+/* Accordion */
+:host ::ng-deep .mat-expansion-panel-header{
+    font-size: 16px;
+}
+
+.accordion .mat-expansion-panel.mat-expanded .accrd-header{
+  flex-basis: 0;
+  background-color: #EDF3FF;
+  border: 1px solid #CED4DA;
+  border-radius: 4px;
+}
+.accordion .mat-expansion-panel.mat-expanded .accrd-header .acc-title{
+    color: #2183E5;
+}
+
+.accordion .mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}
+.accordion .mat-expansion-panel.mat-expanded .accrd-header .caret{
+    background: url('../../assets/caret.svg') no-repeat;
+    width: 12px;
+    height: 12px;
+}
+
+.accordion .mat-expansion-panel .accrd-header .caret{
+    background: url('../../assets/closed_caret.svg') no-repeat;
+    width: 12px;
+    height: 12px;
+}
+
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex{
+    background-color: transparent;
+}
+
+:host ::ng-deep .mat-form-field-label{
+    color: #999;;
+    font-size: 17px;
+}
+:host ::ng-deep .disabled .mat-form-field-label{
+    color: rgba(33, 131, 230, 0.6);;
+}
+
+:host ::ng-deep .mat-form-field-appearance-fill .mat-form-field-underline::before{
+    height: 0;
+}
+
+:host ::ng-deep .mat-input-element[disabled]{
+    border: 1px solid transparent;
+    color: #6C757D;
+    font-size: 16px;
+    padding-left: 0;
+}
+:host ::ng-deep .mat-input-element{
+    padding: 10px 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+:host ::ng-deep .mat-form-field-appearance-fill .mat-form-field-ripple{
+   height: 0;
+}
+
+:host ::ng-deep .mat-expansion-panel-body:first-child{
+    padding: 16px 24px;
+    min-height: 300px;
+}
+:host ::ng-deep .mat-expansion-panel-body{
+    padding: 16px 24px;
+    min-height: 100%;
+}
+
+:host ::ng-deep .mat-expansion-panel-content:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.w-33{
+    float: left;
+    width: 33.3%;
+}
+
+.w-50{
+    float: left;
+    width: 50%;
+}
+
+.w-100{
+    float: left;
+    width: 100%;
+}
+.w-60{
+    width: 60%;
+    float: left;
+}
+.w-40{
+    width: 40%;
+    float: left;
+}
+:host ::ng-deep .mat-form-field-wrapper{
+    padding-bottom: inherit;
+}
+
+:host ::ng-deep .mat-stroked-button:not(:last-child){
+    margin-right: 16px;
+}
+:host ::ng-deep .mat-stroked-button{
+    min-width: 80px;
+    line-height: 28px;
+    border-radius: 4px;
+    cursor: pointer!important;
+}
+:host ::ng-deep .mat-stroked-button:last-child{
+    color: #2183E5;
+    border: 1px solid #2183E5;
+}
+:host ::ng-deep .mat-expansion-panel:not([class*=mat-elevation-z]){
+    box-shadow: none;
+    border: 1px solid #CED4DA;
+    border-radius: 4px;
+    margin: 2px 0;
+}
+
+:host ::ng-deep .mat-expansion-panel-header-title{
+    color: #6C757D;
+}
+
+/* Professional Details */
+.mat-radio-button ~ .mat-radio-button {
+    margin-left: 16px;
+  }
+.pd-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+} 
+.pd-head p{
+    font-size: 12px;
+    color: #6C757D;
+} 
+.pd-head p span{
+    color: #2183E5;
+}
+:host ::ng-deep .mat-radio-button.mat-accent .mat-radio-outer-circle{
+   border-width: 1px;
+   border-color:#CED4DA;
+}
+
+:host ::ng-deep .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle{
+    border-color: #2183E5;
+    border-width: 5px;
+}
+:host ::ng-deep .mat-radio-button.mat-accent .mat-radio-inner-circle{
+    background-color: #fff;
+}
+:host ::ng-deep .mat-radio-container, 
+:host ::ng-deep .mat-radio-outer-circle, 
+:host ::ng-deep .mat-radio-inner-circle{
+    width: 16px;
+    height: 16px;
+}
+:host ::ng-deep .mat-radio-checked .mat-radio-inner-circle {
+    transform: scale(.4);
+}
+
+:host ::ng-deep .mat-radio-label-content{
+    font-size: 16px;
+    color: #6C757D;
+}
+:host ::ng-deep .mat-chip-list-wrapper{
+    display: block;
+}
+
+:host ::ng-deep .mat-form-field-can-float.mat-form-field-hide-placeholder .mat-form-field-label{
+    transform: translateY(-.59375em) scale(.75);
+    width: 133.33333%;
+    display: block;
+}
+.form-inline .form-group{
+    display: block!important;
+    position: relative;
+    top: 5px;
+}
+.form-inline{
+    padding: 0 10.5px 14px;
+}
+.form-inline .input-group{
+    max-width: 200px;
+}
+.disabled .form-inline label{
+    color: rgba(33, 131, 230, 0.6);
+}
+.form-inline label{
+    display: inline!important;
+    font-size: 12px;
+    color: #999;
+}
+.pd-dropdown{
+    min-height: 240px;
+}
+.pf-details{
+    min-height: 500px;
+}
+:host ::ng-deep .accordion .mat-form-field + .mat-form-field{
+    margin-left: 0!important;
+}
+:host ::ng-deep input.mat-chip-input{
+    width: 100%;
+}
+:host ::ng-deep .mat-form-field-appearance-fill.mat-form-field-disabled .mat-form-field-flex{
+  background-color: transparent;
+}
+
+.pf-details p{
+    color: #212529;
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 10.5px;
+    padding-top: 30px;
+    margin-bottom: 0;
+}
+.calendar{
+    background: url('../../assets/Calendar.svg') no-repeat center;
+    width: 36px;
+    height: auto;
+    background-size: 24px;
+    background-color: #CED4DA;
+    border: none;
+    z-index: 0;
+}
+
+:host ::ng-deep .mat-form-field.mat-focused .mat-form-field-label{
+    color: #999;
+}
+:host ::ng-deep .mat-focused .mat-input-element{
+    border-color: rgba(33, 131, 230, 0.6);
+}
+.on{
+    display: block;
+    padding: 6px 6px 0;
+    font-size: 13px;
+    color: #999;
+}
+
+.disabled .on{
+    color: rgba(33, 131, 230, 0.6);
+}
+
+:host ::ng-deep .mat-form-field-label-wrapper{
+    top: -15px;
+}
+:host ::ng-deep .mat-action-row{
+    border: none;
+}
+

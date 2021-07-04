@@ -1,0 +1,9 @@
+.main-container{
+    display: flex;
+}
+app-resumeupload{
+    flex-basis: 40%;
+}
+app-resumedit{
+    flex-basis: 60%;
+}
